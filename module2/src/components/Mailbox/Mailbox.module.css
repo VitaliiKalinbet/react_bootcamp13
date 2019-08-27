@@ -1,0 +1,14 @@
+@value primaryColor from './variables.module.css';
+
+.container {
+    width: 500px;
+    margin: 2rem auto;
+    background-color: primaryColor;
+    padding: 1rem;
+}
+
+.title {
+    color: red;
+    text-align: center;
+    font-size: 3rem;
+}
