@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Panel = ({ title, children }) => {
-    // console.log(children);
+    console.log(children);
     return (
         <section>
             <h2>{title}</h2>

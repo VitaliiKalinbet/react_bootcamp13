@@ -2,6 +2,11 @@ import React from 'react';
 import Product from './Product';
 import Panel from './Panel';
 import Profile from './Profile';
+import Mailbox from './Mailbox';
+import TechList from './TechList';
+import technologies from './technologies.json';
+
+const unreadMessages = [1, 2, 3, 4, 54, 546];
 
 const App = () => {
   // console.log('Profile', Profile);
@@ -15,12 +20,16 @@ const App = () => {
     textButton="Add to cart" 
     />
 
-    <Panel  >
+    <Panel   >
       <Profile name="Mango2" email="mango2@mail.com" />
       <Profile name="Mango2" email="mango2@mail.com" />
       <Profile name="Mango3" email="mango3@mail.com" />
       <Profile name="Mango4" email="mango4@mail.com" />
     </Panel>
+
+    <Mailbox unreadMessages={unreadMessages} />
+
+    <TechList items={technologies} />
   </>
   )
 };
