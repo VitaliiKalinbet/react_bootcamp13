@@ -1,27 +1,35 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Mailbox.module.css';
 
-console.log('styles :', styles);
+// console.log('styles :', styles);
 
-const Mailbox = (props) => {
+const Mailbox = props => {
+  function sum(...rest) {
+    const arr = [...rest];
+    const s = arr.reduce((acc, el) => acc + el, 0);
+    return s;
+  }
 
-    // console.log('props :', props);
+  const { unreadMessages } = props;
 
-    function sum (...rest) {
-        let arr = [...rest];
-        let s = arr.reduce((acc, el) => acc + el, 0);
-        return s;
-    }
-
-    return (
+  return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Mailbox</h1>
-      {props.unreadMessages.length > 0 ? 
-        <p>You have {props.unreadMessages.length} unread messages. Sum props: {sum(...props.unreadMessages)}</p> : 
+      <h1 className={styles.newTitle}>Mailbox</h1>
+      {unreadMessages.length > 0 ? (
+        <p>
+          You have {unreadMessages.length} unread messages. Sum props:{' '}
+          {sum(...unreadMessages)}
+        </p>
+      ) : (
         <p>No unread messages. </p>
-      }
+      )}
     </div>
-    )
+  );
+};
+
+Mailbox.propTypes = {
+  unreadMessages: PropTypes.arrayOf(PropTypes.number).isRequired,
 };
 
 export default Mailbox;

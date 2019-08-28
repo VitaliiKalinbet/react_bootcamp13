@@ -1,19 +1,19 @@
 import React from 'react';
-// import Product from './Product/Product';
-// import Panel from './Panel/Panel';
-// import Profile from './Profile/Profile';
-// import Mailbox from './Mailbox/Mailbox';
-// import TechList from './TechList';
-// import technologies from './technologies.json';
-import Dropdown from './Dropdown/Dropdown';
+import Product from './Product/Product';
+import Panel from './Panel/Panel';
+import Profile from './Profile/Profile';
+import Mailbox from './Mailbox/Mailbox';
+import TechList from './TechList/TechList';
+import technologies from './technologies.json';
+// import Dropdown from './Dropdown/Dropdown';
 
-// const unreadMessages = [1, 2, 3, 4, 54, 546];
+const unreadMessages = [1, 2, 3, 4, 54, 546];
 
 const App = () => {
   // console.log('Profile', Profile);
   return (
     <>
-    {/* <Product 
+    <Product 
     imgUrl="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=480&w=640"  
     alt="Tacos With Lime" 
     name="Tacos With Lime" 
@@ -30,9 +30,9 @@ const App = () => {
 
     <Mailbox unreadMessages={unreadMessages} />
 
-    <TechList items={technologies} /> */}
+    <TechList items={technologies} color="yellow"/>
 
-    <Dropdown isOpen={true} buttonColor="palevioletred" />
+    {/* <Dropdown isOpen={true} buttonColor="palevioletred" /> */}
   </>
   )
 };
