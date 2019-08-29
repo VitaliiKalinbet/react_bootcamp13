@@ -1,0 +1,10 @@
+.container {
+    width: 1000px;
+    margin: 3rem auto;
+    background-color: teal;
+    padding: 1rem;
+}
+
+.title {
+    text-align: center;
+}
