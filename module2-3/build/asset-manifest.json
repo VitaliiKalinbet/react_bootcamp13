@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react_bootcamp13/module2-3/build/static/css/main.a89f13b7.chunk.css",
+    "main.js": "/react_bootcamp13/module2-3/build/static/js/main.2cf7a9ed.chunk.js",
+    "main.js.map": "/react_bootcamp13/module2-3/build/static/js/main.2cf7a9ed.chunk.js.map",
+    "runtime~main.js": "/react_bootcamp13/module2-3/build/static/js/runtime~main.fe3dc655.js",
+    "runtime~main.js.map": "/react_bootcamp13/module2-3/build/static/js/runtime~main.fe3dc655.js.map",
+    "static/js/2.ace9b535.chunk.js": "/react_bootcamp13/module2-3/build/static/js/2.ace9b535.chunk.js",
+    "static/js/2.ace9b535.chunk.js.map": "/react_bootcamp13/module2-3/build/static/js/2.ace9b535.chunk.js.map",
+    "index.html": "/react_bootcamp13/module2-3/build/index.html",
+    "precache-manifest.8febd2d528c77948a52be5819915716b.js": "/react_bootcamp13/module2-3/build/precache-manifest.8febd2d528c77948a52be5819915716b.js",
+    "service-worker.js": "/react_bootcamp13/module2-3/build/service-worker.js",
+    "static/css/main.a89f13b7.chunk.css.map": "/react_bootcamp13/module2-3/build/static/css/main.a89f13b7.chunk.css.map"
+  }
+}
