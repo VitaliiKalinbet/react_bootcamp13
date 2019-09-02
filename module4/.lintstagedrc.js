@@ -1,4 +1,5 @@
 module.exports = {
-  'src/**/*.js?(x)': filenames =>
-    filenames.length > 10 ? 'eslint .' : `eslint ${filenames.join(' ')}`,
+  'src/**/*.{js,jsx}?(x)': () =>
+    'npm run lint:format && npm run lint:fix && git add .',
+  'src/**/*.{json,css}?(x)': () => 'npm run lint:format && git add .',
 };

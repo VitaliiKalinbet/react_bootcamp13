@@ -30,6 +30,7 @@ export default class Counter extends Component {
 
   render() {
     const { value, step } = this.state;
+    const exampleForCommit = 1;
     return (
       <div>
         <span>{value}</span>
