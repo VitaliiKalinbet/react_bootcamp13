@@ -15,7 +15,7 @@ export default class Counter extends Component {
   }
 
   handleIncrement = () => {
-    console.log(e);
+    // console.log(e);
     this.setState((prevState, props) => ({
       value: prevState.value + props.initialStep,
     }));
