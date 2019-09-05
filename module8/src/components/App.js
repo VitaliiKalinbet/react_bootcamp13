@@ -21,7 +21,7 @@ class App extends Component {
   componentDidUpdate(prevProps, prevState) {
     const { category } = this.state;
     if (prevState.category !== category) {
-      this.fetchArticlesAsyncAwait(category);
+      this.fetchArticlesThenCatch(category);
     }
   }
 
