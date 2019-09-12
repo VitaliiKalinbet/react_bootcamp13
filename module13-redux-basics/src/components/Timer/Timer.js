@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import * as timerActions from '../../redux/Timer/timerActions';
 import css from './Timer.module.css';
 
+console.log(process.env.REACT_APP_API_KEY_3);
+
 const Timer = ({ step, value, onIncrement, onDecrement }) => (
   <div className={css.container}>
     <button
